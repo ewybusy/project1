@@ -103,6 +103,10 @@
           }
           %>
           <li><a class="nav-link scrollto" href="signUp.jsp">회원가입</a></li>
+          
+          <li><a class="nav-link scrollto" href="#events">공란11</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">공란22</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">공란33</a></li>
           <li><a class="nav-link scrollto" href="#contact">공란44</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -124,7 +128,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">공란55</a>
 
     </div>
   </header><!-- End Header -->
@@ -753,8 +757,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>What they're saying about us</p>
+          <h2>공란33</h2>
+          <p>공란33</p>
         </div>
 
         <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -839,8 +843,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <h2>공란44</h2>
+          <p>공란44</p>
         </div>
       </div>
 
@@ -925,8 +929,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Reservation</h2>
-          <p>Book a Table</p>
+          <h2>공란</h2>
+          <p>공란55</p>
         </div>
 
         <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
@@ -965,7 +969,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Book a Table</button></div>
+          <div class="text-center"><button type="submit">공란55</button></div>
         </form>
 
       </div>

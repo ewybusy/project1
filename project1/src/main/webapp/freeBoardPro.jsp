@@ -12,9 +12,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -43,7 +40,7 @@
 <!-- 파비콘(타이틀 왼쪽 그림) -->
 <link href="https://media.cdnandroid.com/item_images/920521/imagen-k-league-k-ee-e-0thumb.jpeg" rel="shortcut icon" type="image/x-icon">
 
-<title>로그인페이지</title>
+<title>글쓰기 페이지</title>
 </head>
 <body>
 
@@ -52,24 +49,24 @@
 
         <div class="section-title" >
 
-          <p>로 그 인</p>
+          <p>글쓰기</p>
         </div>
 
-        <form action="loginPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <form action="freeBoardwriteAction.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="col" align="center">
             <div class="col-lg-4 col-md-6 form-group">
             
-              <input type="text" name="userID" class="form-control" id="userID" placeholder="아이디" data-rule="minlen:4" data-msg="">
+              <input type="text" name="bbsTtitle" class="form-control" id="bbsTitle" placeholder="글 제목" data-rule="minlen:4" data-msg="">
               <div class="validate"></div>
             </div>
             
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
-              <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="비밀번호" data-rule="password" data-msg="">
+              <input type="text" class="form-control" name="bbsContent" id="bbsContent" placeholder="글내용" data-rule="bbsContent" data-msg="" style="width:430px; height:400px;">
               <div class="validate"></div>
             </div>
     
           <div class="text-center">
-          <button class="" type="submit">로그인</button>
+          <button type="submit">글쓰기</button>
           </div>
           
           <div class="mb-3">
