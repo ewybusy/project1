@@ -43,7 +43,7 @@ public class BbsDAO {
 			e.printStackTrace();
 		}
 		return ""; // DB 오류
-	}
+	}	
 
 	// 게시글 번호 부여
 	public int getNext() {
