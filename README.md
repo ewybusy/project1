@@ -1,4 +1,4 @@
-# project1
+#project1
 
 K League Data Center
 간단한 CRUD를 활용한 홈페이지 제작
@@ -15,6 +15,7 @@ MySQL WorkBench
 Amazone Database
 
 사용한 기술
+
 Java
 
 JSP
