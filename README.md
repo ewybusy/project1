@@ -1,5 +1,30 @@
 # project1
 
-bootstrap을 써서 만들어는 봤는데
+K League Data Center
+간단한 CRUD를 활용한 홈페이지 제작
 
-자유게시판하고 어떻게 만들어야 하나
+개발환경
+java 2021-06(4.20.0) Enterprise Edition
+
+tomcat 9.0
+
+JavaSE-1.8 jdk1.8.0_202
+
+MySQL WorkBench
+
+Amazone Database
+
+사용한 기술
+Java
+
+JSP
+
+MySQL
+
+html
+
+css
+
+js
+
+Bootstrap
