@@ -54,20 +54,20 @@
           <p>회 원 가 입</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <form action="signUpPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="col" align="center">
             <div class="col-lg-4 col-md-6 form-group">
             
-              <input type="text" name="name" class="form-control" id="name" placeholder="아이디" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="userID" class="form-control" id="userID" placeholder="아이디" data-rule="minlen:4" data-msg="">
               <div class="validate"></div>
             </div>
             
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
-              <input type="email" class="form-control" name="email" id="email" placeholder="비밀번호" data-rule="email" data-msg="Please enter a valid email">
+              <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="비밀번호" data-rule="email" data-msg="">
               <div class="validate"></div>
             </div>
             
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+  <!--           <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" class="form-control" name="phone" id="phone" placeholder="이름" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
@@ -75,7 +75,7 @@
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" name="date" class="form-control" id="date" placeholder="연락처" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
-            </div>
+            </div> -->
             
             <!-- <div class="col-lg-4 col-md-6 form-group mt-3">
               <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">

@@ -76,7 +76,32 @@
           <li><a class="nav-link scrollto" href="#menu">팀순위</a></li>
           <li><a class="nav-link scrollto" href="#specials">선수순위</a></li>
           <li><a class="nav-link scrollto" href="freeBoard.jsp">자유게시판</a></li>
+          
+          
+          <!-- 로그인, 로그아웃 여부 확인 -->
+          <%
+			String userID = null;
+			if(session.getAttribute("userID") != null){
+				userID = (String) session.getAttribute("userID");
+			}
+			int pageNumber = 1;
+			if (request.getParameter("pageNumber") != null) {
+				pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+			}
+			
+		%>
+          
+          <%
+          if(userID == null){
+          %>
           <li><a class="nav-link scrollto" href="login.jsp">로그인</a></li>
+          <%
+          }else{
+          %>
+          <li><a class="nav-link scrollto" href="logOut.jsp">로그아웃</a></li>
+          <%
+          }
+          %>
           <li><a class="nav-link scrollto" href="signUp.jsp">회원가입</a></li>
           <li><a class="nav-link scrollto" href="#contact">공란44</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -482,13 +507,12 @@
                   <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
+                  <h3>공란11</h3>
                   <div class="price">
-                    <p><span>$189</span></p>
+                    <p><span>공란11</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    공란11
                   </p>
                   <ul>
                     <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -635,8 +659,11 @@
       </div>
     </section><!-- End Chefs Section -->
 
+
+
+
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+<!--     <section id="gallery" class="gallery">
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -716,9 +743,11 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
-
-   
+    </section> -->
+    <!-- End Gallery Section -->
+  
+  
+  
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">

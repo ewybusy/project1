@@ -55,16 +55,16 @@
           <p>로 그 인</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <form action="loginPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="col" align="center">
             <div class="col-lg-4 col-md-6 form-group">
             
-              <input type="text" name="name" class="form-control" id="name" placeholder="아이디" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="userID" class="form-control" id="userID" placeholder="아이디" data-rule="minlen:4" data-msg="">
               <div class="validate"></div>
             </div>
             
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
-              <input type="email" class="form-control" name="email" id="email" placeholder="비밀번호" data-rule="email" data-msg="Please enter a valid email">
+              <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="비밀번호" data-rule="password" data-msg="">
               <div class="validate"></div>
             </div>
             
@@ -93,12 +93,16 @@
             <div class="validate"></div>
           </div> -->
           
+          <div class="text-center">
+          <button class="" type="submit">로그인</button>
+          </div>
+          
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">로그인</button></div>
+          
         </form>
 
       </div>
