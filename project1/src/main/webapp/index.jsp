@@ -66,20 +66,38 @@
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
+
+
       <h1 class="logo me-auto me-lg-0"><a href="index.jsp">K LEAGUE DATA CENTER</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">홈화면</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
           <li><a class="nav-link scrollto" href="#menu">팀순위</a></li>
           <li><a class="nav-link scrollto" href="#specials">선수순위</a></li>
-          <li><a class="nav-link scrollto" href="freeBoard.jsp">자유게시판</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">현장사진</a></li>
+		  <li><a class="nav-link scrollto" href="#chefs">공란22</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">공란33</a></li>
+          <li><a class="nav-link scrollto" href="#contact">공란44</a></li>
+      </nav><!-- .navbar -->
           
+       
+           
           
-          <!-- 로그인, 로그아웃 여부 확인 -->
+        <!--   <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> 
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i> -->
+         <!-- 로그인, 로그아웃 여부 확인 -->
+         
+          <a href="freeBoard.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">자유게시판</a>
           <%
 			String userID = null;
 			if(session.getAttribute("userID") != null){
@@ -89,48 +107,19 @@
 			if (request.getParameter("pageNumber") != null) {
 				pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
 			}
-			
 		%>
-          
           <%
           if(userID == null){
           %>
-          <li><a class="nav-link scrollto" href="login.jsp">로그인</a></li>
+           <a href="login.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">로그인</a>
           <%
           }else{
           %>
-          <li><a class="nav-link scrollto" href="logOut.jsp">로그아웃</a></li>
+           <a href="logOut.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">로그아웃</a>
           <%
           }
           %>
-          <li><a class="nav-link scrollto" href="signUp.jsp">회원가입</a></li>
-          
-          <li><a class="nav-link scrollto" href="#events">공란11</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">공란22</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">공란33</a></li>
-          <li><a class="nav-link scrollto" href="#contact">공란44</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">공란55</a>
-
+      <a href="signUp.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원가입</a>
     </div>
   </header><!-- End Header -->
 
@@ -155,7 +144,7 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main"> 
 
     <!-- ======= About Section ======= -->
     <!-- <section id="about" class="about">
@@ -494,43 +483,39 @@
       </div>
     </section><!-- End Specials Section -->
 
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <!--  ======= Events Section ======= --> 
+<!--     <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>공란11</h2>
-          <p>공란11</p>
+          <h2>현장사진</h2>
+          <p>현장사진</p>
         </div>
 
-        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="500">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/ews.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>공란11</h3>
+                  <h3>2022년 08월07일</h3>
                   <div class="price">
-                    <p><span>공란11</span></p>
+                    <p><span>울산현대v전북현대</span></p>
                   </div>
                   <p class="fst-italic">
-                    공란11
+                    현대가더비
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> 2022년 08월 07일</li> 
+                    <li><i class="bi bi-check-circled"></i> 선제골을 넣은 울산현대 엄원상</li>
                   </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
+                    
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="row event-item">
@@ -557,7 +542,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="row event-item">
@@ -584,96 +569,27 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Events Section -->
+    </section> -->
+    <!-- End Events Section -->
 
 
-  <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>공란22</h2>
-          <p>공란22</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Master Chef</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Chefs Section -->
+  
 
 
-
-
-    <!-- ======= Gallery Section ======= -->
-<!--     <section id="gallery" class="gallery">
+ <!--    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Some photos from Our Restaurant</p>
+          <h2>현장사진</h2>
+          <p>현장사진</p>
         </div>
       </div>
 
@@ -748,11 +664,84 @@
         </div>
 
       </div>
-    </section> -->
-    <!-- End Gallery Section -->
+    </section>
+   <!--  End Gallery Section -->
+   
   
   
-  
+    
+    
+    
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>공란22</h2>
+          <p>공란22</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Chef</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Patissier</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Cook</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
@@ -930,7 +919,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>공란</h2>
+          <h2>공란55</h2>
           <p>공란55</p>
         </div>
 
@@ -975,11 +964,6 @@
 
       </div>
     </section><!-- End Book A Table Section -->
-    
-    
-    
-    
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -988,64 +972,24 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="row-lg-3 row-md-6">
             <div class="footer-info">
-              <h3>Restaurantly</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
+              <h3>K LEAGUE</h3>
+              <p>02) 2002 - 0663</p>
+              <p>서울 종로구 경희궁길 46 축구회관 5층</p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+ 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>2021 © K LEAGUE</span></strong>. All Rights Reserved.
       </div>
+      
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->

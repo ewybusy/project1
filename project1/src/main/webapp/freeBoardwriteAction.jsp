@@ -58,9 +58,7 @@ if (userID == null){
 		}
 	}
 }
-		
-	/* String id = request.getParameter("id");
-	String pw = request.getParameter("pw"); */ 
+	
 %>
 
 

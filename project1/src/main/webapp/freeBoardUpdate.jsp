@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import = "java.io.PrintWriter" %>
+    <%@ page import = "java.io.PrintWriter" %>
 <%@ page import = "bbs.Bbs" %>
 <%@ page import = "bbs.BbsDAO" %>
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
+ <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="" name="description">
@@ -36,15 +36,25 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+
 <meta charset="UTF-8">
-<title>게시판 내용</title>
+<!-- 파비콘(타이틀 왼쪽 그림) -->
+<link href="https://media.cdnandroid.com/item_images/920521/imagen-k-league-k-ee-e-0thumb.jpeg" rel="shortcut icon" type="image/x-icon">
+
+<title>게시글 수정</title>
 
 <body>
-
 <%
 	String userID = null;
 if (session.getAttribute("userID") != null){
 	userID = (String) session.getAttribute("userID");
+}
+if(userID == null){
+	PrintWriter script = response.getWriter();
+	script.println("<script>");
+	script.println("alert('로그인하세요.')");
+	script.println("location.href = 'login.jsp'");
+	script.println("</script>"); 
 }
 int bbsID = 0;
 if(request.getParameter("bbsID") != null){
@@ -56,58 +66,47 @@ if(request.getParameter("bbsID") != null){
 	script.println("alert('유효하지 않은 글입니다.')");
 	script.println("location.href = 'freeBoard.jsp'");
 	script.println("</script>"); 
-} 
-Bbs bbs = new BbsDAO().getbbs(bbsID);
+ }
+ Bbs bbs  = new BbsDAO().getbbs(bbsID);
+ if (!userID.equals(bbs.getuserID())){
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('권한이 없습니다.')");
+		script.println("location.href = 'freeBoard.jsp'");
+		script.println("</script>"); 
+ }
 %>
 
-<div class="container">
-<div class="row">
-</div>
-<table class="table table-striped" style="text-align:center; border: 1px solid #cda45e; td: #cda45e;" > 
-<tbody>
-<!-- Google Fonts -->
+<body>
 
+<section id="book-a-table" class="book-a-table" align="center">
 
-	<tr>
-	<th colspan="2" style="background-color: eeeeee; text-align: center; font-size:40px; color:#cda45e;">게시판 글보기</th> 
-	</tr>
+	<form method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" action="freeBoardUpdateAction.jsp?bbsID=<%= bbsID %>">
+    <div class="container aos-init aos-animate" data-aos="fade-up"> 
+	
+        <div class="section-title" >
+          <p>게시글 글수정</p>
+          </div>
 
-<tr>
-<td style="width: 20%; font-size:20px; color:#CDA45E;;" >글 제목</td>
-<td colspan="2" style="font-size:20px; color:white;" ><%= bbs.getbbsTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&lt;") %></td>
-</tr>
+     <tbody>
 
-<tr>
-<td style="font-size:20px; color:#CDA45E;;">작성자</td>
-<td colspan="2" style="font-size:20px; color:white;"><%= bbs.getuserID() %></td>
-</tr>
+      <tr>
+      	<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50" value="<%= bbs.getbbsTitle() %>"></td>
+      </tr>
+      
+      <tr>
+      	<td><textarea class="form-control" placeholder="글 내용을 작성하세요" name="bbsContent" maxlength="2048" style="height: 400px;"><%= bbs.getbbsContent() %></textarea></td> <!-- textarea는 장문의 글을 작성시에 사용 -->
+      </tr>
 
-<tr>
-<td style="font-size:20px; color:#CDA45E;;">작성일자</td>
-<td colspan="2" style="font-size:20px; color:white;"><%= bbs.getbbsDate().substring(0, 11) + bbs.getbbsDate().substring(11, 13) + "시" + bbs.getbbsDate().substring(14, 16) + "분" %></td>
-</tr>
+    </tbody>
 
-<tr>
-<td style="font-size:20px; color:#CDA45E;;">내용</td>
-<td colspan="2" style="height: 500px; font-size:20px; color:white;"><%= bbs.getbbsContent().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&lt;").replaceAll("\n", "<br>") %></td>
-</tr>
+          
+	<input type="submit" class="btn btn-primary pull-right" value="글수정">
+         
 
-</tbody>
-</table>
-
-<a href="freeBoard.jsp" style="font-size : 20px;">목록</a>
-<%
-	if(userID != null && userID.equals(bbs.getuserID())){
-%>
-		<a href="freeBoardUpdate.jsp?bbsID=<%= bbsID %>" style="font-size : 20px;">수정</a>
-		<a onclick="return confirm('정말로 삭제하시겠습니까?')" href="freeBoardDeleteAction.jsp?bbsID=<%= bbsID %>" style="font-size : 20px;">삭제</a>
-		<%
-	}
-		%>
-</div>
-</tbody>
-
-
-
+        </form>
+      </div>
+    </section>
+    
 </body>
 </html>

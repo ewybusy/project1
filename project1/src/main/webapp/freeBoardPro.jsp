@@ -1,5 +1,9 @@
+<%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="bbs.BbsDAO" %>
+<%@page import="java.io.PrintWriter" %>
+
 <!DOCTYPE html>
 <html>
 <!-- bootstrap -->
@@ -40,17 +44,17 @@
 <link href="https://media.cdnandroid.com/item_images/920521/imagen-k-league-k-ee-e-0thumb.jpeg" rel="shortcut icon" type="image/x-icon">
 
 <title>글쓰기 페이지</title>
-</head>
+
 <body>
 
 <section id="book-a-table" class="book-a-table" align="center">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
 
+	 <form method="post" action="freeBoardwriteAction.jsp" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
 	
         <div class="section-title" >
           <p>글쓰기</p>
           </div>
-	 <form action="freeBoardwriteAction.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
      <tbody>
 
@@ -63,10 +67,10 @@
       </tr>
 
     </tbody>
-
-<button type="submit">글쓰기</button> 
           
-	<!-- <input type="submit" class="btn btn-primary pull-right" value="글쓰기"> -->
+	 <input type="submit" class="btn btn-primary pull-right" value="글쓰기">
+	 
+	
          
 
         </form>
