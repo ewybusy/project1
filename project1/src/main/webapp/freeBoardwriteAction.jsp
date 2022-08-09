@@ -53,7 +53,7 @@ if (userID == null){
 		else  {
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("location.href = '03freeBoard.jsp'");
+			script.println("location.href = 'freeBoard.jsp'");
 			script.println("</script>");
 		}
 	}

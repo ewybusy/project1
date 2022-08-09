@@ -1,3 +1,7 @@
+<%@page import="bbs.Bbs"%>
+<%@page import="bbs.BbsDAO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page import = "java.io.PrintWriter" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -45,70 +49,82 @@
 
 <section id="book-a-table" class="book-a-table" align="center">
       <div class="container aos-init aos-animate" data-aos="fade-up">
+      
+<%
+	String userID = null;
+if(session.getAttribute("userID") != null){
+	userID = (String)session.getAttribute("userID");
+}
+int pageNumber = 1; // 기본 1페이지
+if(request.getParameter("pageNumber") != null){
+	pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+}
+%>
 
-        <div class="section-title" >
-          <p>자유게시판</p>
-        </div>
-
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="section-title" >
+	<form action="freeBoardPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <p style="color:#CDA45E;">자유게시판</p>
         
-      <!--     <div class="col" align="center">
-            <div class="col-lg-4 col-md-6 form-group">
-            
-              <input type="text" name="name" class="form-control" id="name" placeholder="아이디" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0" >
-              <input type="email" class="form-control" name="email" id="email" placeholder="비밀번호" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="이름" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" name="date" class="form-control" id="date" placeholder="연락처" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div> -->
-            
-            <table class="table table-hover">
-            <thead>
-            <tr>
-            <th style="color:white;">번호</th>
-            <th style="color:white;">제목</th>
-            <th style="color:white;">글쓴이</th>
-            <th style="color:white;">작성일</th>
-            </tr>
-            </thead>
-            </table>
-            
-            <!-- <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
-            </div>
-          </div> 
-          
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div> -->
-          
-          <div class="mb-3">
-             <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div> 
-          <a href="freeBoardPro.jsp" class="btn btn-primary pull-left">글쓰기</a> 
-        </form>
+      <table class="table table-hover">
+      <thead>
+      <tr>
+      <th style="color:#CDA45E;">번호</th>
+      <th style="color:#CDA45E;">제목</th>
+      <th style="color:#CDA45E;">글쓴이</th>
+      <th style="color:#CDA45E;">작성일</th>
+      </tr>
+      </thead>
 
-      </div>
+<%
+	BbsDAO bbsDAO = new BbsDAO();
+	ArrayList<Bbs> list = bbsDAO.getList(pageNumber);
+	for(int i=0; i<list.size(); i++){
+%>
+ <tr style="color:white;">
+ 		
+ 		<!-- 글번호 -->
+       <td style="color:#CDA45E;"><%= list.get(i).getbbsID() %></td>
+       
+       <!-- 제목을 눌렀을때 해당 게시물로 이동, 해당번호에 맞는 페이지 나올 수 있게 -->
+       <!-- 글제목 -->
+       <td><a href="freeBoardView.jsp?bbsID=<%= list.get(i).getbbsID() %>"><%= list.get(i).getbbsTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&lt;") %></a></td>
+       
+       <!-- 글쓴이 -->
+       <td><%= list.get(i).getuserID() %></td>
+       
+       <!-- 작성시간 --> 
+       <td><%= list.get(i).getbbsDate().substring(0, 11) + list.get(i).getbbsDate().substring(11, 13) + "시" + list.get(i).getbbsDate().substring(14, 16) + "분"%></td> 
+       </tr>
+   <%
+       }
+   %>
+    </tbody>
+   
+</table>
+
+
+ <!-- 페이지 이동 -->
+<%
+   if(pageNumber!=1) { //현재 페이지가 있는지, 버튼 생성	  
+%>
+  <a href = "freeBoard.jsp?pageNumber=<%=pageNumber-1 %>" class="btn btn-success btn-arraw-left"> 
+      이전
+  </a>
+<%
+  } if(bbsDAO.nextPage(pageNumber+1)) { //다음 페이지가 존재하는지
+%>
+  <a href = "freeBoard.jsp?pageNumber=<%=pageNumber+1 %>" class="btn btn-success btn-arraw-left">
+      다음                
+  </a>
+<% 
+  }
+%>
+
+<hr />
+
+<a href="index.jsp">메인이동</a>
+<a href="freeBoardPro.jsp">글쓰기</a> 
+        </form>
     </section>
 
 </body>

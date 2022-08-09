@@ -139,7 +139,7 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
-          <h1>K LEAGUE<span>DATA CENTER</span></h1>
+          <h1>K LEAGUE<span> DATA CENTER</span></h1>
           <h2>K리그 정보를 알아보세요!</h2>
 
           <div class="btns">
