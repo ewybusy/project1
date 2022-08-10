@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="user.UserDAO" %>
+<%@page import="user.User" %>
 <%@page import="java.io.PrintWriter" %>
 <% request.setCharacterEncoding("UTF-8"); %>
 <jsp:useBean id="user" class="user.User" scope="page" />
@@ -22,6 +23,7 @@ String userID=null;
 if(session.getAttribute("userID") != null){
 userID = (String) session.getAttribute("userID"); 
 }
+
 if (userID != null){
 	PrintWriter script = response.getWriter();
 	script.println("<script>");
@@ -56,10 +58,7 @@ if (userID != null){
 		}
 
 	}
-		
 
-	/* String id = request.getParameter("id");
-	String pw = request.getParameter("pw"); */ 
 %>
 	
 

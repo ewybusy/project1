@@ -53,6 +53,7 @@ if (userID == null){
 		else  {
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
+			script.println("alert('글쓰기 성공')");
 			script.println("location.href = 'freeBoard.jsp'");
 			script.println("</script>");
 		}

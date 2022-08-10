@@ -115,7 +115,7 @@
           <%
           }else{
           %>
-           <a href="logOut.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">로그아웃</a>
+           <a href="memberInfo.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원정보</a>
           <%
           }
           %>
@@ -145,80 +145,6 @@
   </section><!-- End Hero -->
 
   <main id="main"> 
-
-    <!-- ======= About Section ======= -->
-    <!-- <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="assets/img/about.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>End About Section
- -->
- 
-    <!-- ======= Why Us Section ======= -->
-    <!-- <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Why Us</h2>
-          <p>Why Choose Our Restaurant</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Why Us Section
- -->
     <!-- ======= 팀랭킹 Section ======= -->
     <section id="menu" class="menu section-bg">
       <div class="container" data-aos="fade-up">
@@ -231,10 +157,6 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <!-- <li data-filter="*" class="filter-active">All</li> -->
-              <!-- <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li> -->
             </ul>
           </div>
         </div>
@@ -482,105 +404,6 @@
 
       </div>
     </section><!-- End Specials Section -->
-
-    <!--  ======= Events Section ======= --> 
-<!--     <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>현장사진</h2>
-          <p>현장사진</p>
-        </div>
-
-        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="500">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/ews.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>2022년 08월07일</h3>
-                  <div class="price">
-                    <p><span>울산현대v전북현대</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    현대가더비
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> 2022년 08월 07일</li> 
-                    <li><i class="bi bi-check-circled"></i> 선제골을 넣은 울산현대 엄원상</li>
-                  </ul>
-                    
-                </div>
-              </div>
-            </div>End testimonial item
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div>End testimonial item
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div>End testimonial item
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Events Section -->
-
-
-  
 
 
  <!--    <!-- ======= Gallery Section ======= -->
@@ -970,24 +793,35 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="col">
 
-          <div class="row-lg-3 row-md-6">
+          <div class="col-lg-3 col-md-3">
             <div class="footer-info">
               <h3>K LEAGUE</h3>
               <p>02) 2002 - 0663</p>
               <p>서울 종로구 경희궁길 46 축구회관 5층</p>
+              </div>
+            </div>
+          
+           <div class="col-lg-3 col-md-3">
+            <div class="footer-info">
+              <h3>엄우용</h3>
+              <p>Email : ewybusy@gmail.com</p>
+              <p>Github : https://github.com/ewybusy</p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
+          
+          </div>
+          </div>
+          </div>
+          
+          
  
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>2021 © K LEAGUE</span></strong>. All Rights Reserved.
+        &copy; Copyright <strong><span>2022 © K LEAGUE</span></strong>. All Rights Reserved.
       </div>
       
       <div class="credits">

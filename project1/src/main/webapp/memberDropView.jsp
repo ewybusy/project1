@@ -43,18 +43,24 @@
 <!-- 파비콘(타이틀 왼쪽 그림) -->
 <link href="https://media.cdnandroid.com/item_images/920521/imagen-k-league-k-ee-e-0thumb.jpeg" rel="shortcut icon" type="image/x-icon">
 
-<title>회원가입페이지</title>
+<title>회원탈퇴페이지</title>
 </head>
 <body>
+
+<%
+	request.setCharacterEncoding("UTF-8");
+	String id = (String)session.getAttribute("userID");
+	String pw = (String)session.getAttribute("userPassword");
+%>
 
 <section id="book-a-table" class="book-a-table" align="center">
       <div class="container aos-init aos-animate" data-aos="fade-up">
 
         <div class="section-title" >
-          <p>회 원 가 입</p>
+          <p>회 원 탈 퇴</p>
         </div>
 
-        <form action="signUpPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <form action="memberDropAction.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="col" align="center">
             <div class="col-lg-4 col-md-6 form-group">
             
@@ -67,12 +73,7 @@
               <div class="validate"></div>
             </div>
 
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">회원가입</button></div>
+          <div class="text-center"><button type="submit">회원탈퇴</button></div>
         </form>
 
       </div>
