@@ -23,6 +23,7 @@ request.setCharacterEncoding("UTF-8");
 
 <%
 
+// 어떻게 만드노....
 	
 %>
 
