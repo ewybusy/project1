@@ -23,7 +23,7 @@ public class UserDAO {
 	
 	// DB연동
 	public UserDAO() {
-		String dbURL = "jdbc:mysql://database-1.cjdkyisyys3a.ap-northeast-2.rds.amazonaws.com:3306/user";
+		String dbURL = "jdbc:mysql://database-1.cjdkyisyys3a.ap-northeast-2.rds.amazonaws.com:3306/user?serverTimezone=UTC";
 		String dbID = "admin";
 		String dbPassword = "TQ1s13P6XCa";
 		try {

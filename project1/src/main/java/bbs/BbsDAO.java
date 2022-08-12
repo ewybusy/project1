@@ -19,7 +19,7 @@ public class BbsDAO {
 	// AWS 로그인 설정
 	// user,bbs 따로가 아니고 sql 한 프로젝트 안에 같이 쓸 수 있도록 한다.
 	public BbsDAO() {
-		String dbURL = "jdbc:mysql://database-1.cjdkyisyys3a.ap-northeast-2.rds.amazonaws.com:3306/bbs";
+		String dbURL = "jdbc:mysql://database-1.cjdkyisyys3a.ap-northeast-2.rds.amazonaws.com:3306/bbs?serverTimezone=UTC";
 		String dbID = "admin";
 		String dbPassword = "TQ1s13P6XCa";
 		try {

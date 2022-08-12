@@ -1173,10 +1173,10 @@
     _getConfig(config) {
       config = { ...Default$8,
         ...config
-      };
+      }
       typeCheckConfig(NAME$9, config, DefaultType$8);
       return config;
-    }
+    };
 
     _handleSwipe() {
       const absDeltax = Math.abs(this.touchDeltaX);
