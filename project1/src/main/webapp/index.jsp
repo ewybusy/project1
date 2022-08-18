@@ -113,13 +113,14 @@
           %>
            <a href="login.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">로그인</a>
           <%
-          }else{
+          }else{ // 로그인시 회원정보로 변경
           %>
            <a href="memberInfo.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원정보</a>
           <%
           }
           %>
       <a href="signUp.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원가입</a>
+		      
     </div>
   </header><!-- End Header -->
 
@@ -173,6 +174,56 @@
             </div>
           </div>
 
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K05.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">전북현대</a><span>2위</span>
+            </div>
+            <div class="menu-ingredients">
+              전북, 전북현대, 현대자동차
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K03.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">포항스틸러스</a><span>3위</span>
+            </div>
+            <div class="menu-ingredients">
+              포항, 포항스틸러스, 포스코
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K04.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">제주유나이티드</a><span>4위</span>
+            </div>
+            <div class="menu-ingredients">
+              제주, 제주유나이티드, SK에너지
+            </div>
+          </div>
+          
+   		<div class="col-lg-6 menu-item filter-specialty">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K18.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">인천유나이티드</a><span>5위</span>
+            </div>
+            <div class="menu-ingredients">
+              인천, 인천유나이티드, 시민구단
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K29.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">수원FC</a><span>6위</span>
+            </div>
+            <div class="menu-ingredients">
+              수원, 수원FC, 시민구단
+            </div>
+          </div>
+          
           <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K21.png" class="menu-img" alt="">
             <div class="menu-content">
@@ -183,15 +234,6 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-starters">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K05.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">전북현대</a><span>2위</span>
-            </div>
-            <div class="menu-ingredients">
-              전북, 전북현대, 현대자동차
-            </div>
-          </div>
 
           <div class="col-lg-6 menu-item filter-salads">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K09.png" class="menu-img" alt="">
@@ -203,15 +245,6 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K03.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">포항스틸러스</a><span>3위</span>
-            </div>
-            <div class="menu-ingredients">
-              포항, 포항스틸러스, 포스코
-            </div>
-          </div>
 
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K17.png" class="menu-img" alt="">
@@ -223,15 +256,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K04.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">제주유나이티드</a><span>4위</span>
-            </div>
-            <div class="menu-ingredients">
-              제주, 제주유나이티드, SK에너지
-            </div>
-          </div>
+          
 
           <div class="col-lg-6 menu-item filter-salads">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K02.png" class="menu-img" alt="">
@@ -243,17 +268,9 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K18.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">인천유나이티드</a><span>5위</span>
-            </div>
-            <div class="menu-ingredients">
-              인천, 인천유나이티드, 시민구단
-            </div>
-          </div>
+  
           
-                    <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K35.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">김천상무</a><span>11위</span>
@@ -263,17 +280,9 @@
             </div>
           </div>
           
-                    <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K29.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">수원FC</a><span>6위</span>
-            </div>
-            <div class="menu-ingredients">
-              수원, 수원FC, 시민구단
-            </div>
-          </div>
+
           
-                    <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K08.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">성남FC</a><span>12위</span>

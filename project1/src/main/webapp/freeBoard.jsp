@@ -61,6 +61,7 @@ if(request.getParameter("pageNumber") != null){
 }
 %>
 
+<!-- 자유게시판 전체적인 틀 생성 -->
 <div class="section-title" >
 	<form action="freeBoardPro.jsp" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <p style="color:#CDA45E;">자유게시판</p>

@@ -15,6 +15,7 @@
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
+
     <%
         String userID = null;
         if(session.getAttribute("userID") != null) { //user가 접속이 되어있다면 세션값이 할당되어 있다면
@@ -33,7 +34,7 @@
         //글을 수정할 권한이 있는지 확인
         int bbsID = 0; // 게시글 번호
         if (request.getParameter("bbsID") != null) {
-            bbsID = Integer.parseInt(request.getParameter("bbsID"));//게시글 번호 받아오기
+            bbsID = Integer.parseInt(request.getParameter("bbsID")); //게시글 번호 받아오기
         }
         if (bbsID == 0) {//게시글이 존재하지 않는 다는 얘기
             PrintWriter script = response.getWriter();
@@ -49,7 +50,7 @@
             if (!userID.equals(bbs.getuserID())) { // !userID세션값과 bbs.getUserID 작성한사람 동일한지
                 PrintWriter script = response.getWriter();
                 script.println("<script>");
-                script.println("alert('권한이 업습니다.')");
+                script.println("alert('권한이 없습니다.')");
                 script.println("location.href = 'freeBoard.jsp'"); // 다시 게시글 페이지로 이동
                 script.println("</script>");
             } else { 
