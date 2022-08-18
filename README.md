@@ -20,12 +20,7 @@ Java
 
 JSP
 
-MySQL
+MySQL을 활용한 DataBase연동
+(22.08.18 현재 이클립스에서 실행시엔 회원가입,로그인 다 되지만 배포 후엔 안되는 오류 발생)
 
-html
-
-css
-
-js
-
-Bootstrap
+Bootstrap을 활용한 메인디자인 수정
