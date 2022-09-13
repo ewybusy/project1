@@ -4,7 +4,7 @@ K League Data Center
 간단한 CRUD를 활용한 홈페이지 제작
 
 배포완료
-kleaguedatacenter.site
+http://kleaguedatacenter.site
 
 개발환경
 java 2021-06(4.20.0) Enterprise Edition
