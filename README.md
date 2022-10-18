@@ -1,31 +1,28 @@
-#project1
+K League Data Center Ver.1
 
-K League Data Center
-간단한 CRUD를 활용한 홈페이지 제작
+간단한 CRUD를 활용한 홈페이지 및 게시판 제작
 
-배포완료
-http://kleaguedatacenter.site
+🔨개발환경
+Java 2021-06(4.20.0) Enterprise Edition
 
-개발환경
-java 2021-06(4.20.0) Enterprise Edition
-
-tomcat 9.0
+Tomcat 9.0
 
 JavaSE-1.8 jdk1.8.0_202
 
 MySQL WorkBench
 
-Amazone Database
-
-사용한 기술
+🔨사용한 기술
 
 Java
 
 JSP
 
-MySQL을 활용한 DataBase연동
-*(22.08.18 현재 이클립스에서 실행시엔 회원가입,로그인 등등 다 되지만 배포 후엔 안되는 오류 발생)*
+Bootstrap을 활용한 메인디자인 짜집기 연습
 
-Bootstrap을 활용한 메인디자인 수정
+🔎 프로젝트 서술
 
-22.08.18 현재 회원탈퇴, 회원수정 작성 중
+개발 기간 2022.07.11 ~ 2022.08.01
+
+개발 인원
+
+엄우용
