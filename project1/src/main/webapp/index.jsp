@@ -77,9 +77,9 @@
           <li><a class="nav-link scrollto" href="#menu">팀순위</a></li>
           <li><a class="nav-link scrollto" href="#specials">선수순위</a></li>
           <li><a class="nav-link scrollto" href="#gallery">현장사진</a></li>
-		  <li><a class="nav-link scrollto" href="#chefs">공란22</a></li>
+		  <!-- <li><a class="nav-link scrollto" href="#chefs">공란22</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">공란33</a></li>
-          <li><a class="nav-link scrollto" href="#contact">공란44</a></li>
+          <li><a class="nav-link scrollto" href="#contact">공란44</a></li> -->
       </nav><!-- .navbar -->
           
        
@@ -113,14 +113,13 @@
           %>
            <a href="login.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">로그인</a>
           <%
-          }else{ // 로그인시 회원정보로 변경
+          }else{
           %>
            <a href="memberInfo.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원정보</a>
           <%
           }
           %>
       <a href="signUp.jsp" class="book-a-table-btn scrollto d-none d-lg-flex">회원가입</a>
-		      
     </div>
   </header><!-- End Header -->
 
@@ -152,7 +151,7 @@
 
         <div class="section-title">
           <h2>KLEAGUE1 TEAM RANKING</h2>
-          <p>2022년 08월 05일 (금) 현재 팀 순위</p>
+          <p>2022년 10월 23일 시즌 종료, 팀 순위</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -167,10 +166,20 @@
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K01.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">울산현대</a><span>1위</span>
+              <a href="#">울산현대</a><span>1위 (우승)</span>
             </div>
             <div class="menu-ingredients">
               울산, 울산현대, 현대중공업
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K29.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">수원FC</a><span>7위</span>
+            </div>
+            <div class="menu-ingredients">
+     		수원, 수원FC, 시민구단
             </div>
           </div>
 
@@ -183,7 +192,17 @@
               전북, 전북현대, 현대자동차
             </div>
           </div>
-          
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K17.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">대구FC</a><span>8위</span>
+            </div>
+            <div class="menu-ingredients">
+              대구, 대구FC, 시민구단
+            </div>
+          </div>
+
           <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K03.png" class="menu-img" alt="">
             <div class="menu-content">
@@ -193,104 +212,80 @@
               포항, 포항스틸러스, 포스코
             </div>
           </div>
-          
+
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K04.png" class="menu-img" alt="">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K09.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">제주유나이티드</a><span>4위</span>
+              <a href="#">FC서울</a><span>9위</span>
             </div>
             <div class="menu-ingredients">
-              제주, 제주유나이티드, SK에너지
+              서울, FC서울, GS
             </div>
           </div>
           
-   		<div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K18.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">인천유나이티드</a><span>5위</span>
+              <a href="#">인천유나이티드</a><span>4위</span>
             </div>
             <div class="menu-ingredients">
               인천, 인천유나이티드, 시민구단
             </div>
           </div>
           
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K29.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">수원FC</a><span>6위</span>
-            </div>
-            <div class="menu-ingredients">
-              수원, 수원FC, 시민구단
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K21.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">강원FC</a><span>7위</span>
-            </div>
-            <div class="menu-ingredients">
-     		강원, 강원FC, 시민구단
-            </div>
-          </div>
-
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K09.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">FC서울</a><span>8위</span>
-            </div>
-            <div class="menu-ingredients">
-              서울, FC서울, GS
-            </div>
-          </div>
-
-
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K17.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">대구FC</a><span>9위</span>
-            </div>
-            <div class="menu-ingredients">
-              대구, 대구FC, 시민구단
-            </div>
-          </div>
-
-          
-
-          <div class="col-lg-6 menu-item filter-salads">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K02.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">수원삼성</a><span>10위</span>
+              <a href="#">수원삼성</a><span>10위 (승강PO)</span>
             </div>
             <div class="menu-ingredients">
               수원, 수원삼성, 제일기획
             </div>
           </div>
 
-  
           
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K35.png" class="menu-img" alt="">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K04.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">김천상무</a><span>11위</span>
+              <a href="#">제주유나이티드</a><span>5위</span>
             </div>
             <div class="menu-ingredients">
-              김천, 김천상무, 시민구단
+              제주, 제주유나이티드, SK에너지
+            </div>
+          </div>
+
+          
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K35.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">김천상무</a><span>11위 (승강PO)</span>
+            </div>
+            <div class="menu-ingredients">
+              김천, 김천상무, 시민구단(군)
             </div>
           </div>
           
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K21.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">제주유나이티드</a><span>6위</span>
+            </div>
+            <div class="menu-ingredients">
+              강원, 강원FC, 시민구단
+            </div>
+          </div>
 
           
-          <div class="col-lg-6 menu-item filter-specialty">
+                    <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://www.kleague.com/assets/images/mobile/emblem/emblem_K08.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">성남FC</a><span>12위</span>
+              <a href="#">성남FC</a><span>12위 (강등)</span>
             </div>
             <div class="menu-ingredients">
               성남, 성남FC, 시민구단
             </div>
           </div>
+          
 
         </div>
 
@@ -303,8 +298,8 @@
 
         <div class="section-title">
           <h2>KLEAGUE1 PLAYER RANKING</h2>
-          <p>2022년 08월 05일 (금) 현재 선수 순위</p>
-        </div>
+          <p>2022년 10월 23일 시즌 종료, 선수 순위</p>
+        </div> 
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-3">
@@ -320,7 +315,7 @@
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">경기 MVP 횟수 1위</a>
               </li>
-              
+  			 <!--            
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">추후 추가 11</a>
               </li>
@@ -329,6 +324,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-5">추후 추가 22</a>
               </li>
               
+               -->
      
               
             </ul>
@@ -341,11 +337,11 @@
                 <div class="row">
 	            <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>득점 순위 1위</h3>
-                    <p class="fst-italic">무고사</p>
-                    <p>인천유나이티드</p>
+                    <p class="fst-italic">조규성</p>
+                    <p>전북현대</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://incheonation.kr/files/attach/images/2021/05/27/d754c184083438855322a713705bfbba.png" alt="" class="img-fluid">
+                    <img src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/player/player_20190167.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -354,11 +350,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>도움 1위</h3>
-                    <p class="fst-italic">김대원</p>
-                    <p>강원FC</p>
+                    <p class="fst-italic">이기제</p>
+                    <p>수원삼성</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/player/player_20160098.png" alt="" class="img-fluid">
+                    <img src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/player/player_20160052.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -375,7 +371,8 @@
                   </div>
                 </div>
               </div>
-              
+          
+          <!-- <!--     
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -401,15 +398,13 @@
                   </div>
                 </div>
               </div>
-              
+               --> 
         
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        </div>
 
       </div>
     </section><!-- End Specials Section -->
@@ -504,7 +499,7 @@
     
     
     
-    <!-- ======= Chefs Section ======= -->
+<!-- <!--     ======= Chefs Section =======
     <section id="chefs" class="chefs">
       <div class="container" data-aos="fade-up">
 
@@ -572,9 +567,9 @@
         </div>
 
       </div>
-    </section><!-- End Chefs Section -->
+    </section>End Chefs Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+  <!-- <!--   ======= Testimonials Section =======
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -597,7 +592,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -610,7 +605,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -623,7 +618,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -636,7 +631,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -649,18 +644,18 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>End Testimonials Section
 
+ --> 
 
-
-    <!-- ======= Contact Section ======= -->
+  <!-- <!--   ======= Contact Section =======
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -741,18 +736,18 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>End Contact Section
     
     
-    
+     --> 
 
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>공란55</h2>
-          <p>공란55</p>
+          <h2>문의</h2>
+          <p>문의</p>
         </div>
 
         <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
@@ -791,7 +786,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">공란55</button></div>
+          <div class="text-center"><button type="submit">제출</button></div>
         </form>
 
       </div>
